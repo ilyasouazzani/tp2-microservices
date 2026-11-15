@@ -1,0 +1,1 @@
+<project><modelVersion>4.0.0</modelVersion><groupId>ma.ilyas</groupId><artifactId>tp2-microservices</artifactId><version>1.0.0</version><packaging>pom</packaging><modules><module>discovery</module><module>config</module><module>customer-service</module><module>inventory-service</module><module>billing-service</module><module>gateway</module></modules></project>

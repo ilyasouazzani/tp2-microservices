@@ -1,0 +1,73 @@
+{
+  "info": {
+    "name": "tp2-microservices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Créer client",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8080/customers",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Ilyas\", \"email\": \"ilyas@example.test\"}"
+        }
+      }
+    },
+    {
+      "name": "Créer produit",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8080/products",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Clavier\", \"price\": 150, \"quantity\": 10}"
+        }
+      }
+    },
+    {
+      "name": "Créer facture",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8080/bills",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"customerId\": 1, \"lines\": [{\"productId\": 1, \"quantity\": 2}]}"
+        }
+      }
+    },
+    {
+      "name": "Détail facture",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/bills/1",
+        "header": []
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "accountId",
+      "value": "REMPLACER_PAR_ID_RETOURNE"
+    }
+  ]
+}

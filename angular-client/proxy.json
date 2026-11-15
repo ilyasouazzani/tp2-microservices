@@ -1,0 +1,26 @@
+{
+  "/customers": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "changeOrigin": true,
+    "headers": {
+      "Origin": "http://localhost:4200"
+    }
+  },
+  "/products": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "changeOrigin": true,
+    "headers": {
+      "Origin": "http://localhost:4200"
+    }
+  },
+  "/bills": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "changeOrigin": true,
+    "headers": {
+      "Origin": "http://localhost:4200"
+    }
+  }
+}
